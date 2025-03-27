@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coiny&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Tamil:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Scheherazade+New:wght@400;500;600;700&family=Space+Grotesk:wght@300..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coiny&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Tamil:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Scheherazade+New:wght@400;500;600;700&family=Space+Grotesk:wght@300..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+@font-face {
+    src: url('capella.ttf');
+    font-family: "capella";
+}
+@font-face {
+    src: url('Futura-CondensedLight-Normal.ttf');
+    font-family: "Futura-Condensed";
+}
+  img {
+    width: 100%;
+  }
+
+  section.New_section_1 {
+    padding: 30px 0;
+  }
+
+  .property-details {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-top: 1px solid #9C5C39;
+    border-bottom: 1px solid #9C5C39;
+    padding: 25px 0;
+  }
+
+  .detail-item {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #9C5C39;
+  }
+
+  .detail-item:last-child {
+    border-right: none;
+  }
+
+  .New_section_1 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  .New_section_1 p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .banner_sec_conent label {
+    color: white;
+    font-size: 16px;
+  }
+
+  .banner_sec_conent .form-group {
+    margin-bottom: 15px;
+  }
+
+  .banner_sec_conent input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+  }
+
+  .banner_sec_conent .phone-input {
+    position: relative;
+  }
+
+  .Banner_div_nbr {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+
+  .Banner_first_conent {
+    background: #273658;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .banner_sec_conent {
+    background: #273658;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  span.drive_cls {
+    font-size: 16px  !important;
+    font-weight: 100;
+}
+  .Banner_first_conent h3 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #C46453, #999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Public Sans';
+}
+.new_changes span {
+    font-size: 40px;
+}
+.Banner_first_conent p {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #fff;
+    font-family: "Public Sans", serif;
+    font-weight: 500;
+}
+.Banner_first_conent h2 {
+    font-size: 35px;
+    margin: 30px 0;
+    color: #fff;
+    font-family: "capella";
+}
+a.open-popup-link-Banner {
+    color: white;
+    background-color: #9c5c39;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 150px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+.banner_sec_conent ul {
+    padding: 20px;
+}
+.banner_sec_conent ul li {
+    margin: 7px 0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    color: #fff;
+}
+.banner_form_div {
+    padding: 0 20px;
+}
+button.btn_banner {
+    padding: 6px 30px;
+    color: #273658;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #273658;
+}
+.new_changes {
+    transform: translateY(50px);
+    display: flex;
+    flex-direction: column;
+}
+.iti {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+section.Banner_section_nbr {
+    overflow: hidden;
+}
+.Change_new_nbr {
+    transform: translateY(60px);
+    background: url(./background_image.png);
+    border-radius: 20px;
+    background-size: 100% 100%;
+    padding: 20px;
+}
+span.price_new {
+    font-size: 20px !important;
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 50%;
+    filter: blur(3px);
+}
+span.bhk_three {
+    font-family: poppins;
+    font-weight: 400;
+}
+input::placeholder {
+    color: #000; /* Black color */
+    opacity: 1; /* Ensure full opacity in some browsers */
+}
+@media screen and (max-width: 1400px) {
+    .banner_sec_conent {
+    padding: 0 20px;
+    }
+    .Banner_first_conent {
+    padding: 0 20px;
+    }
+    .banner_sec_conent ul {
+    padding: 10px;
+}
+}
+@media screen and (max-width: 1300px) {
+    .banenr_img img {
+    width: 100%;
+    height: 750px;
+}
+.Banner_first_conent h2 {
+    font-size: 28px;
+}
+.new_changes span {
+    font-size: 38px;
+}
+.new_changes {
+    gap: 0px;
+}
+.Banner_first_conent {
+        padding: 0 10px;
+    }
+    .banner_sec_conent {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .banner_sec_conent ul li {  
+    font-size: 14px;
+    }
+    .Banner_first_conent h2 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .banenr_img img {
+        height: auto;
+    }
+    .Banner_div_nbr {
+    grid-template-columns: 2fr;
+}
+.Banner_first_conent {
+        padding: 30px 10px;
+    }
+    .banner_sec_conent {
+        padding: 30px 10px;
+    }
+    .new_changes {
+        gap: 0px;
+        transform: translateY(0px);
+    }
+    .Change_new_nbr {
+    transform: translateY(0px);
+}
+}
+  @media screen and (max-width: 768px) {
+    .property-details {
+      grid-template-columns: 1fr;
+      border: none;
+    }
+
+    .detail-item {
+      border-bottom: 1px solid #9C5C39;
+    }
+
+    .detail-item {
+      border-bottom: 1px solid #9C5C39;
+      border-right: 0;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .banner_sec_conent ul li {
+        font-size: 12px;
+        margin: 2px;
+    }
+    .banner_sec_conent {
+        padding: 30px 5px;
+    }
+  }
+</style>
+
+<body>
+  <section class="Banner_section_nbr">
+    <div class="Banner_div_nbr">
+      <div class="banenr_img">
+        <img src="Banner-Image 1.png" alt="">
+      </div>
+      <div class="Banner_first_conent">
+<div class="new_changes">
+    <h3>EXPERIENCE THE ART OF
+      <span>  LUXURIOUS LIVING</span></h3>
+      <h2><span class="bhk_three">3 BHK </span> 
+        <br>HIGH RISE APARTMENTS</h2>
+
+      <p style="font-weight:200 ;">STARTS AT <span class="price_new">1 Cr</span> </p>
+      <div class="banner-enquiry-btn">
+        <a href="javascript:void(0)" data-magpopup="#enquiryForm" class="open-popup-link-Banner">ENQUIRY NOW</a>
+      </div>
+      <p style="text-align:center"><img alt="" src="https://www.nbrgroup.in/assets/new-website/images/location.png" style="border:0px; box-sizing:border-box; margin:0px 5px 0px 0px; padding:0px; text-align:center; vertical-align:middle; width:25px"> SARJAPUR ROAD, WHITEFIELD <br>(5min <span class="drive_cls">Drive from</span> RGA Tech&nbsp;Park)
+      </p>
+</div>
+
+      </div>
+      <div class="banner_sec_conent">
+        <div class="Change_new_nbr">
+            <ul style="list-style: none;">
+                <li>➤  Prime Location Off Sarjapur Road Bangalore</li>
+                <li>➤ 5 Mins From WIPRO Kodathi & RGA Tech Park</li>
+                <li>➤ 10 Mins To Kasavanahalli & Varthur Bangalore</li>
+                <li>➤ 10 Mins From ITPL Whitefield & Hope Farm Jn.</li>
+                <li>➤ Just 20 Mins To HSR Layout & Electronic City</li>
+                <li>➤ 30,000 SFT Clubhouse 40+ Modern Amenities</li>
+                <li>➤ Spread Over 10 Acres With 80% Open Spaces</li>
+                <li>➤ 600 Homes (B+G+25 Floor) - 4 Stunning Tower</li>
+              </ul>
+              <div class="banner_form_div">
+                <form>
+                  <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="NAME :">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="E-MAIL :">
+                  </div>
+                  <div class="form-group phone-input" >
+                    <input type="tel" id="phone" name="phone" placeholder="PHONE :">
+                  </div>
+                  <div  class="form-group phone-input" style="text-align: center;"><button type="submit" class="btn_banner">Submit</button></div>
+                </form>
+              </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="New_section_1">
+    <div class="property-details">
+      <div class="detail-item">
+        <h4>APARTMENTS</h4>
+        <p>3 BHK</p>
+      </div>
+      <div class="detail-item">
+        <h4>PRICE</h4>
+        <p>₹ 1.39 Cr Onwards*</p>
+      </div>
+      <div class="detail-item">
+        <h4>TOWERS</h4>
+        <p>4</p>
+      </div>
+      <div class="detail-item">
+        <h4>FLOORS</h4>
+        <p>2B +G+26</p>
+      </div>
+      <div class="detail-item">
+        <h4>LOCATION</h4>
+        <p>Sarjapur Road, Whitefield</p>
+      </div>
+
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+  
+    const iti = window.intlTelInput(phoneInputField, {
+      initialCountry: "auto",
+      separateDialCode: true,
+      geoIpLookup: function(callback) {
+        fetch("https://ipapi.co/json")
+          .then(response => response.json())
+          .then(data => callback(data.country_code.toLowerCase()))
+          .catch(() => callback("in")); // Default to India if geolocation fails
+      },
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
