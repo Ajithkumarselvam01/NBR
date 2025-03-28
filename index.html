@@ -14,8 +14,141 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Tamil:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Scheherazade+New:wght@400;500;600;700&family=Space+Grotesk:wght@300..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- jQuery (Required) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </head>
 <style>
+  .floorplan-slider .owl-dots {
+    display: none;
+  }
+
+  .owl-theme .owl-nav [class*=owl-]:hover {
+    background: #869791 !important;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot {
+    position: relative;
+    top: 0px;
+    left: -65px;
+    font-size: 20px !important;
+    border: 1px solid !important;
+    padding: 5px 14px !important;
+  }
+
+  .owl-theme .owl-nav [class*=owl-]:hover {
+    background: #869791 !important;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    position: relative;
+    top: 0px;
+    right: -65px;
+    font-size: 20px !important;
+    border: 1px solid !important;
+    padding: 5px 14px !important;
+  }
+
+  /* Slider */
+  .floorplan-slider {
+    padding: 20px 0;
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .owl-nav button {
+    background: none !important;
+    border: none !important;
+    font-size: 24px;
+    color: #154e36;
+    /* Change arrow color */
+    transition: 0.3s;
+  }
+
+  .owl-nav button:hover {
+    color: #0e3b29;
+    /* Darker green on hover */
+  }
+
+  .luxury-exclusive-img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .luxury-exclusive-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .enquiry-btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+
+  .enquiry-btn a {
+    background: #154e36;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .enquiry-btn a:hover {
+    background: #0e3b29;
+  }
+
+  /* Owl Carousel Navigation */
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .owl-nav button {
+    background: none !important;
+    border: none !important;
+  }
+
+  .owl-nav button img {
+    width: 30px;
+    height: 30px;
+  }
+
   @font-face {
     src: url('capella.ttf');
     font-family: "capella";
@@ -242,6 +375,57 @@
     padding: 10px 0 0 10px;
   }
 
+  .luxury-exclusive-title h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 600;
+  }
+
+  .luxury-exclusive-title h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .down_btn {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #273658;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .down_btn a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 20px;
+  }
+
+  section.Luxury-Redefined {
+    padding: 30px;
+    overflow: hidden;
+  }
+
+  .enquiry_btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .enquiry_btn a.open_popup_link {
+    padding: 15px 30px;
+    background: #273658;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 13px;
+    text-decoration: none;
+  }
+
   @media screen and (max-width: 1400px) {
     .banner_sec_conent {
       padding: 0 20px;
@@ -336,6 +520,22 @@
       border: none;
     }
 
+    .luxury-exclusive-title h3 {
+      font-size: 20px;
+    }
+
+    .down_btn a {
+      font-size: 16px;
+    }
+
+    section.Luxury-Redefined {
+      padding: 10px;
+    }
+
+    .enquiry_btn a.open_popup_link {
+      padding: 10px 20px;
+    }
+
     .detail-item {
       border-bottom: 1px solid #9C5C39;
     }
@@ -351,9 +551,10 @@
       font-size: 12px;
       margin: 2px;
     }
+
     ul.chan_sec {
-    margin: 0px 0px 10px 20px;
-}
+      margin: 0px 0px 10px 20px;
+    }
 
     .banner_sec_conent {
       padding: 30px 5px;
@@ -441,6 +642,88 @@
 
     </div>
   </section>
+  <!-- Luxury Redefined section start  -->
+  <section class="Luxury-Redefined">
+    <div class="container">
+      <div class="luxury-redefined-wrapper">
+        <div class="luxury-exclusive-title">
+          <div class="row ">
+            <div class="col-lg-12">
+              <h3 class="title-font title-color text-centre ">Apartments Designed For Maximum Space Utilisation & Ample Sunlight and Ventilation</h3>
+            </div>
+          </div>
+        </div>
+        <div class="luxury-enquiry-wrapper">
+          <div class="owl-carousel owl-theme floorplan-slider">
+            <div class="item">
+              <div class="luxury-enquiry-content">
+                <div class="luxury-exclusive-img">
+                  <img src="https://www.souloftheseasons.in/wp-content/themes/twentytwentyfive/assets/image/Luxury-redefined-exclusively-your.png" alt="Specification 1450 & 1505 sqft" title="Specification 1450 & 1505 sqft">
+                </div>
+                <div class="down_btn">
+                  <a href="">SBA - 1450 & 1505 sqft</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="luxury-enquiry-content">
+                <div class="luxury-exclusive-img">
+                  <img src="https://www.souloftheseasons.in/wp-content/themes/twentytwentyfive/assets/image/Luxury-redefined-exclusively-your.png" alt="Specification 1622 & 1684 sqft" title="Specification 1622 & 1684 sqft">
+                </div>
+                <div class="down_btn">
+                  <a href="">SBA - 1622 & 1684 sqft</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="luxury-enquiry-content">
+                <div class="luxury-exclusive-img">
+                  <img src="https://www.souloftheseasons.in/wp-content/themes/twentytwentyfive/assets/image/Luxury-redefined-exclusively-your.png" alt="Specification 1635 & 1697 sqft" title="Specification 1635 & 1697 sqft">
+                </div>
+                <div class="down_btn">
+                  <a href="">SBA - 1635 & 1697 sqft</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="luxury-enquiry-content">
+                <div class="luxury-exclusive-img">
+                  <img src="https://www.souloftheseasons.in/wp-content/themes/twentytwentyfive/assets/image/Luxury-redefined-exclusively-your.png" alt="Specification 1643 & 1705 sqft" title="Specification 1643 & 1705 sqft">
+                </div>
+                <div class="down_btn">
+                  <a href="">SBA - 1643 & 1705 sqft</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="luxury-enquiry-content">
+                <div class="luxury-exclusive-img">
+                  <img src="https://www.souloftheseasons.in/wp-content/themes/twentytwentyfive/assets/image/Luxury-redefined-exclusively-your.png" alt="Specification 1825 sqft" title="Specification 1825 sqft">
+                </div>
+                <div class="down_btn">
+                  <a href="">SBA - 1825 sqft</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="luxury-enquiry-content">
+                <div class="luxury-exclusive-img">
+                  <img src="https://www.souloftheseasons.in/wp-content/themes/twentytwentyfive/assets/image/Luxury-redefined-exclusively-your.png" alt="Specification 1826 sqft" title="Specification 1826 sqft">
+                </div>
+                <div class="down_btn">
+                  <a href="">SBA - 1826 sqft</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="enquiry_btn">
+            <a href="#" class="open_popup_link" data-bs-toggle="modal" data-bs-target="#">Download Floorplan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Luxury Redefined section end -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script>
     const phoneInputField = document.querySelector("#phone");
@@ -460,7 +743,32 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script>
+    $(document).ready(function () {
+      $('.floorplan-slider').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        autoplay: true,
+        autoplayspeed: 1000,
+        navText: [
+          '<i class="fa-solid fa-chevron-left"></i>',
+          '<i class="fa-solid fa-chevron-right"></i>'
+        ],
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
