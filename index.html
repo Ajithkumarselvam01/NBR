@@ -315,6 +315,7 @@
     font-size: 18px;
     font-weight: 700;
     border: 1px solid #273658;
+    margin-top: 10px;
   }
 
   .new_changes {
@@ -521,6 +522,9 @@ img.Mobile_banner {
   }
 
   @media screen and (max-width: 768px) {
+    section.New_section_1 {
+    display: none;
+}
     .property-details {
       grid-template-columns: 1fr;
       border: none;
@@ -556,6 +560,9 @@ img.Mobile_banner {
     top: 210px;
     left: 0;
 }
+.new_changes {
+        gap: 7px;
+    }
 .Banner_first_conent {
         padding: 20px 10px;
     }
@@ -647,7 +654,7 @@ ul.chan_sec {
                 <input type="email" id="email" name="email" placeholder="E-MAIL :">
               </div>
               <div class="form-group phone-input">
-                <input type="tel" id="phone" name="phone" placeholder="PHONE :">
+                <input type="tel" id="phone" name="phone" placeholder="">
               </div>
               <div class="form-group phone-input" style="text-align: center;"><button type="submit" class="btn_banner">Submit</button></div>
             </form>
@@ -767,19 +774,23 @@ ul.chan_sec {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script>
     const phoneInputField = document.querySelector("#phone");
-
+  
     const iti = window.intlTelInput(phoneInputField, {
-      initialCountry: "auto",
-      separateDialCode: true,
+      initialCountry: "in", // Set default country to India
       geoIpLookup: function (callback) {
         fetch("https://ipapi.co/json")
           .then(response => response.json())
           .then(data => callback(data.country_code.toLowerCase()))
-          .catch(() => callback("in")); // Default to India if geolocation fails
+          .catch(() => callback("in")); // Fallback to India if geolocation fails
       },
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });
+  
+    // Remove placeholder after initialization
+    phoneInputField.setAttribute("placeholder", "");
   </script>
+  
+  
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
