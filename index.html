@@ -426,6 +426,9 @@
     text-decoration: none;
     font-weight: 700;
 }
+img.Mobile_banner {
+    display: none;
+}
 
   @media screen and (max-width: 1400px) {
     .banner_sec_conent {
@@ -491,7 +494,12 @@
     .Banner_div_nbr {
       grid-template-columns: 2fr;
     }
-
+    img.Destop_banner {
+    display: none;
+}
+img.Mobile_banner {
+    display: block;
+}
     .Banner_first_conent {
       padding: 30px 10px;
     }
@@ -546,6 +554,16 @@
       border-right: 0;
     }
   }
+  @media screen and (max-width: 500px) {
+    .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    top: 210px;
+    left: 0;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    top: 210px;
+    right: 0;
+}
+  }
 
   @media screen and (max-width: 425px) {
     .banner_sec_conent ul li {
@@ -567,7 +585,8 @@
   <section class="Banner_section_nbr">
     <div class="Banner_div_nbr">
       <div class="banenr_img">
-        <img src="Banner-Image 1.png" alt="">
+        <img src="Banner-Image 1.png" alt="" class="Destop_banner">
+        <img src="Mobile_banner.png" alt="" class="Mobile_banner">
       </div>
       <div class="Banner_first_conent">
         <div class="new_changes">
