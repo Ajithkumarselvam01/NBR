@@ -325,6 +325,24 @@
     .breadcrumb-wrapper ol li:last-child::after {
       content: none;
     }
+    .fixed-footer-cust {
+    background: #214020 !important;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;
+}
+.fix-link {
+    color: #fff !important;
+    font-size: 14px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    background-image: none;
+    box-shadow: none;
+}
 
     h1,
     h3 {
@@ -887,6 +905,10 @@
       section.New_section_1 {
         display: none;
       }
+      .fixed-footer-cust {
+        background: #053029;
+        padding: 20px 10px;
+    }
 
       .property-details {
         grid-template-columns: 1fr;
@@ -2472,23 +2494,23 @@
 
   <div id="ohsnap"></div>
 
-  <div class="col-lg-12 col-sm-12 col-xs-12 fixed-footer-cust d-block d-sm-none">
-    <div class="box box-right">
-      <a class="btn interested fix-link email-box-sticky open-popup-link" href="#project-popup-form">
-        <i class="fa fa-envelope" aria-hidden="true"></i> Enquiry
-      </a>
+  <div class="col-lg-12 col-sm-12 col-xs-12 fixed-footer-cust hidden-md hidden-lg hidden-sm">
+    <div class="container">
+        <!-- <div class="col-lg-6 col-sm-6 col-xs-6 div-line pd0">
+            <a href="tel:02250061699" class="fix-link callme">
+                <i class="fa fa-phone f-icon" aria-hidden="true"></i> Call Now
+            </a>
+        </div> -->
+        <div class="col-lg-6 col-sm-6 col-xs-6 div-line pd0">
+            <button class="btn fix-link broucher-click" fdprocessedid="nr24wo">Download Brochure
+            </button>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-xs-6  pd0">
+            <button class="btn fix-link i-am" fdprocessedid="q5bh3j"><i class="fa fa-envelope"></i> Enquire Now
+            </button>
+        </div>
     </div>
-    <div class="box box-right">
-      <a class="btn interested fix-link call-box-sticky" href="tel:+91-8884610800">
-        <i class="fa fa-phone" aria-hidden="true"></i> Call
-      </a>
-    </div>
-    <div class="box box-right">
-      <a href="https://api.whatsapp.com/send?phone=8904358724&text=Hi%20there!" target="_blank" class="btn interested fix-link whatsapp-box-sticky">
-        <i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp
-      </a>
-    </div>
-  </div>
+</div>
 
   <!--  -->
   <div id="project-popup-form" class="white-popup mfp-hide project-popup-form-wrapper">
