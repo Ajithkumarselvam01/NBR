@@ -335,10 +335,10 @@
     z-index: 99;
 }
 .fix-link {
-    color: #fff !important;
+    color: #264790 !important;
     font-size: 16px;
     padding: 0;
-    background: transparent;
+    background: #fff;
     border: none;
     background-image: none;
     box-shadow: none;
@@ -765,19 +765,24 @@
 
     .enquiry_btn {
       text-align: center;
-      margin-top: 50px;
+      margin:30px;
     }
 
     .enquiry_btn a.open_popup_link {
       padding: 15px 30px;
-      background: #9C5C39;
+      background: #264790;
       color: #fff;
       font-size: 20px;
       border-radius: 13px;
       text-decoration: none;
       font-weight: 700;
     }
-
+    .book-now-btn a {
+    background: #264790;
+}
+.Schedule a {
+    background-color: #264790 !important;
+}
     img.Mobile_banner {
       display: none;
     }
@@ -811,7 +816,13 @@
       font-weight: 700;
       text-decoration: none;
     }
-
+    .banner-enquiry-btn a{
+      background-color: #fff;
+    }
+    .highrise-content .discover-btn button {
+      background-color: #264790;
+      border: 1px solid #264790;
+    }
     @media screen and (max-width: 1400px) {
       .banner_sec_conent {
         padding: 0 20px;
@@ -916,6 +927,9 @@
         margin-top: 100px;
     }
       img.Mobile_banner {
+    display: none;
+}
+.new_changes h3 {
     display: none;
 }
       .fixed-footer-cust {
@@ -1112,7 +1126,7 @@
           <a href="https://www.nbrgroup.in/"><img src="https://www.nbrgroup.in/assets/new-website/images/NBR-logo-new.gif" alt="NBR Logo"></a>
         </div>
         <div class="cnt-btn">
-          <a href="/contact-us">CONNECT</a>
+          <a class="btn fix-link broucher-click open-popup-link-new" href="javascript:void(0)" data-magpopup="#bookForm">CONNECT</a>
           <div class="sub-menu">
             <a href="tel:8880003399"><img src="https://www.nbrgroup.in/assets/new-website/images/phone.png" alt="Phone Icon">8880003399</a>
             <br>
@@ -1185,7 +1199,7 @@
                   <input type="email" id="email" name="email" placeholder="E-MAIL :">
                 </div>
                 <div class="form-group phone-input">
-                  <input type="tel" id="phone" name="phone" placeholder="">
+                  <input type="tel" id="phone" name="phone" placeholder=" PHONE :">
                 </div>
                 <div class="form-group phone-input" style="text-align: center;"><button type="submit" class="btn_banner">Submit</button></div>
               </form>
