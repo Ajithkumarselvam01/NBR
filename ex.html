@@ -542,13 +542,23 @@ section.testimonial_section {
       border-radius: 25px;
       cursor: pointer;
     }
-
+.testimonials-car .owl-prev {
+    transform: translateX(-15px);
+}
+.testimonials-car .owl-next {
+    transform: translateX(15px);
+}
     .google-logo {
       height: 30px;
       margin-top: 10px;
       width: 100px;
     }
+.testimonials-car .owl-prev,.owl-next {
+background: #E2E2E2;
+    padding: 15px 20px;
+    border-radius: 50%;
 
+}
     .owl-nav {
       margin-top: 10px;
     }
@@ -1502,13 +1512,13 @@ Property prices have appreciated consistently, making Sarjapur Road a top choice
 
   </section>
    <section class="testimonial_section" >
-   <div class="container">
+    <div class="container-fluid">
      <h2>CUSTOMER TESTIMONIALS</h2>
      <h3>EXCELLENT</h3>
      <div class="stars">★★★★★</div>
      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" class="google-logo" alt="Google Logo">
 
-     <div class="owl-carousel owl-theme" style="margin-top: 30px;">
+     <div class="owl-carousel testimonials-car owl-theme" style="margin-top: 30px;">
        <div class="testimonial-item">
          <div class="avatar">H</div>
          <h4>Hunny</h4>
@@ -1568,8 +1578,7 @@ Property prices have appreciated consistently, making Sarjapur Road a top choice
      </div>
 
      <button class="callback-btn">Get A Callback</button>
-
-   </div>
+</div>
  </section>
 <div class="enquiryForm mfp-hide" autocomplete="off" id="popup-form">
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DKj000008PAOr" id="enquiryForm" method="post" class="form popupform">
@@ -2914,19 +2923,24 @@ $(document).ready(function() {
     </script>
     <script>
     $(document).ready(function(){
-      $('.owl-carousel').owlCarousel({
-          loop:true,
-          margin:10,
-          nav: false,
-          autoplay: true,
-          autoplayTimeout: 4000,
-          responsive:{
-              0:{ items:1 },
-              800:{ items:2 },
-              1000:{ items:3 }
-          }
-      });
-    });
+  $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [
+        '<i class="fa-solid fa-chevron-left"></i>',
+        '<i class="fa-solid fa-chevron-right"></i>'
+      ],
+      autoplay: true,
+      autoplayTimeout: 4000,
+      responsive: {
+          0: { items: 1 },
+          800: { items: 2 },
+          1000: { items: 4 }
+      }
+  });
+});
+
   </script>
     <!-- Google Code for Remarketing Tag -->
     <script>
